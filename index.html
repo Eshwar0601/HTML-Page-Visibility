@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Visibility</title>
+</head>
+<body>
+    <script>
+        document.addEventListener("visibilitychange",() => {
+            document.title = document.visibilityState;
+            var h = document.createElement("H1");
+            var t = document.createTextNode("The Page is "+ document.visibilityState);
+            h.appendChild(t);
+            document.body.appendChild(h);
+        });
+    </script>
+</body>
+</html>
