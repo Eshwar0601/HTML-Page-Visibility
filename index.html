@@ -9,7 +9,7 @@
     <script>
         document.addEventListener("visibilitychange",() => {
             document.title = document.visibilityState;
-            var h = document.createElement("H1");
+            var h = document.createElement("H4");
             var t = document.createTextNode("The Page is "+ document.visibilityState);
             h.appendChild(t);
             document.body.appendChild(h);
